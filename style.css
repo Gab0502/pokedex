@@ -1,3 +1,8 @@
+@font-face {
+    font-family: pokemon;
+    src: url(/fonts/Pokemon\ Classic.ttf);
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -56,4 +61,7 @@ button{
 }
 button:active{
     text-shadow: 1px 1px 10px #ffffff;
+}
+h1{
+    font-family: 'pokemon';
 }
