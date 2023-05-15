@@ -1,0 +1,59 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-attachment: fixed;
+
+}
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    align-self: center;
+    padding: 80px;
+}
+
+.pokedex {
+    position: relative;
+}
+.pokedeximg{
+    position: relative;
+    box-shadow: 1px 1px 10px black;
+    filter: brightness(70%);
+    z-index: 0;
+}
+.sem-titulo {
+    position: absolute;
+    top:-20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+button{
+    position: absolute;
+    top:50px;
+    left: 1px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border: none;
+    z-index: 3;
+    background-color: #ad2817;
+    color: #f2f2f2;
+    font-size: 10px;
+    box-shadow: 1px 1px 10px black;
+}
+button:active{
+    text-shadow: 1px 1px 10px #ffffff;
+}
