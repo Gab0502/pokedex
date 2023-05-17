@@ -46,7 +46,7 @@ body{
     transform: translateX(-50%);
     z-index: 1;
 }
-button{
+.on{
     position: absolute;
     top:50px;
     left: 1px;
@@ -59,9 +59,58 @@ button{
     font-size: 10px;
     box-shadow: 1px 1px 10px black;
 }
+h1{
+    z-index: 4;
+    font-family: 'pokemon';
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 13px;
+    color: black;
+}
+.pokemonImage{
+    z-index: 50;
+    position: absolute;
+    margin-top:15%;
+    margin-left: 30%;
+    width: 200px;
+}
+.pokemonName{
+    position: absolute;
+    margin-left: 150px;
+}
+.btn-prev{
+    position: absolute;
+    margin-top: 590px;
+    margin-left: -502px;
+    border: none;
+    background-color: transparent;
+    color:white;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.btn-next{
+    position: absolute;
+    margin-top: 590px;
+    margin-left: -18px;
+    border: none;
+    background-color: transparent;
+    color:white;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
 button:active{
     text-shadow: 1px 1px 10px #ffffff;
 }
-h1{
+.input__search{
+    margin-top: 335px;
+    margin-left: 30px;
     font-family: 'pokemon';
+    position: absolute;
+    z-index: 3;
+    border: none;
+    background-color: transparent;
+    color: grey;
 }
