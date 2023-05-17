@@ -31,7 +31,7 @@ button.addEventListener('click', () => {
             tela.src = 'imgs/ligado.png'
             let searchPokemon = 1;
 
-            const fetchPokemon = async (pokemon) => {
+            const indexpoke = async (pokemon) => {
                 const APIResponse = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
 
                 if (APIResponse.status === 200) {
@@ -40,12 +40,12 @@ button.addEventListener('click', () => {
                 }
             }
 
-            const renderPokemon = async (pokemon) => {
+            const render = async (pokemon) => {
 
                 pokemonName.innerHTML = 'Carregando...';
                 pokemonNumber.innerHTML = '';
 
-                const data = await fetchPokemon(pokemon);
+                const data = await indexpoke(pokemon);
 
                 if (data) {
                     pokemonImage.style.display = 'block';
@@ -63,22 +63,22 @@ button.addEventListener('click', () => {
 
             form.addEventListener('submit', (event) => {
                 event.preventDefault();
-                renderPokemon(input.value.toLowerCase());
+                render(input.value.toLowerCase());
             });
 
             buttonPrev.addEventListener('click', () => {
                 if (searchPokemon > 1) {
                     searchPokemon -= 1;
-                    renderPokemon(searchPokemon);
+                    render(searchPokemon);
                 }
             });
 
             buttonNext.addEventListener('click', () => {
                 searchPokemon += 1;
-                renderPokemon(searchPokemon);
+                render(searchPokemon);
             });
 
-            renderPokemon(searchPokemon);
+            render(searchPokemon);
             break
 
         case 2:
